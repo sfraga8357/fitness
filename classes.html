@@ -1,5 +1,5 @@
- <!DOCTYPE html>
-<!-- This Website template was created by: Stephanie Fraga 11/03/2023-->
+<!DOCTYPE html>
+<!-- This Website template was created by: Stephanie Fraga 11/10/2023-->
  <html lang="en">
  <head>
 	<title> Forward Fitness Club </title>
@@ -13,14 +13,26 @@
 <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 
  </head>
-
  <body>
+<div id="container">
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+	<div id="menu-links"> 
+	<a href="index.html">Home</a>
+	<a href="about.html">About US</a>
+	<a href="classes.html">Classes</a>
+	<a href="nutrition.html">Nutrition</a>
+	<a href="contact.html">Contact Us </a>
+</div>
+	<a class="menu-icon" onclick ="hamburger()">
+	<div&#9776;</div>
+	</a>
+	</nav>
 	<!--Use the header area for the website name or logo-->
-	<header>
+	<header id="ffc-logo">
 
 	<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
 	</header>
-
 	<!--Use the nav area to add hyperlikns to other pages within the website-->
 	<nav>
 	    <ul>
@@ -31,17 +43,13 @@
 		<li><a href="contact.html">Contact Us</a></li>
 	    </ul>
 	</nav>
-
 	<!-- Classes Hero Image -->
 	<div id="hero" class="tablet-desktop">
 	<img src="images/classes-hero-image.jpg" alt="group of fitness people">
-</div>
-	
+</div>	
 <!--Use the main area to add the main contect of the webpage-->
 	<main>
-
 <div class="mobile">
-
 	<h3>Group Fitness Classes </h3>
 	<p>Boot Camp: TR 5am &amp; 6pm</p>
 	<p>Cardio: MWF 6am &amp; 6pm</p>
@@ -49,11 +57,9 @@
 	<p>Spinning: TR 6am &amp; 6pm</p>
 	<p>Yoga: TR 6am &amp; 6pm</p>
 	<p>Zumba: MWF 7am &amp; 6pm</p>
-
 </div>
 
 <div class="tablet-desktop">
-
 <table><!-- Start Table -->
 <caption>Group Fitness Class Schedule</caption>
 <tr><!-- Row 1 -->
@@ -106,46 +112,40 @@
 	<td>A</td>
 </tr>
 </table><!-- End Table -->
-
 </div>
 
 <div id="music-sample">
-
 	<h3>We play upbeat music to help keep you focused during  your workout. Below is a sample of the type of music played during a class workout.</h3>
 	<audio controls>
 		<source src="media/ffc_aud.mp3" type="audio/mp3">
 		<source src="media/ffc_aud.ogg" type="audio/ogg">
 		<p>Your browser does not support the audio element.</p>
 	</audio>
-
 </div>
-
 </main>
 
 <div class="grid">
-
 <figure class="frame">
 	<a href="classes.html"><img src="images/fitness-group.jpg" alt="group of fitness people"></a>
 	<figcaption class="pic-text">Group Fitness</figcaption>
 </figure>
-
 <figure class="frame">
 	<a href="nutriton.html"><img src="images/food-heart.jpg" alt="healthy food in the shape of a heart"></a>
 	<figcaption class="pic-text">Meal Plans</figcaption>
 </figure>
-
 <figure class="frame">
 	<a href="contact.html"><img src="images/personal-trainer.jpg" alt="personal trainer with a clipboard"></a>
 	<figcaption class="pic-text">Start Today</figcaption>
 </figure>
-
 	</div>
-
 	<!--Use the footer area to add webpage footer content-->
 	<footer>
 	<p>&copy; Copyright 2021. All Rights Reserved. </p>
 	<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
 	</footer>
+
+		<script src="script/script.js"></script>
+
 </body>
  </html>
 

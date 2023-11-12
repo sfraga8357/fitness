@@ -11,15 +11,33 @@
 <link rel="icon" type="image/png" sizes="32x32" href="images.favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apples-touch-icon.png">
 <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
  </head>
  <body>
 
+<div id="container">
+
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+	<div id="menu-links"> 
+	<a href="index.html">Home</a>
+	<a href="about.html">About US</a>
+	<a href="classes.html">Classes</a>
+	<a href="nutrition.html">Nutrition</a>
+	<a href="contact.html">Contact Us </a>
+</div>
+
+	<a class="menu-icon" onclick ="hamburger()">
+	<div&#9776;</div>
+	</a>
+	</nav>
+
 	<!--Use the header area for the website name or logo-->
-	<header>
+	<header id="ffc-logo">
+
 		<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
 	</header>
 	<!--Use the nav area to add hyperlikns to other pages within the website-->
-
 	<nav>
 	<ul>
 		<li><a href="index.html">Home</a></li> 
@@ -36,13 +54,12 @@
 
 	<h2> Ready to get started? Contact us today.</h2>
 	<h4> <a href="tel:814-555-9608">(814) 555-9608</a></h4>
-
 	<h4>Email us:<a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></h4>
+	<h3 class="offer" onclick="discount()" id="special">View Promo Code</h3>
+
 <h4>Visit us at: 1275 Channel Center Street, Boston, MA 02210</h4>
 
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11795.404823393084!2d-71.06173953976887!3d42.34569559843088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7dc2b67e7b%3A0x36ec93427cd9c5f1!2sChannel%20Center%20St%2C%20Boston%2C%20MA%2002210!5e0!3m2!1sen!2sus!4v1694722265087!5m2!1sen!2sus" width="600" height="450" allowfullscreen class="map"></iframe>
-
-	
 
 </div>
 </main>
@@ -51,8 +68,7 @@
 
 	<h2>Complete the form below to begin your free trial.</h2>
 	
-<form><!-- Start Form-->
-	
+<form><!-- Start Form-->	
 <fieldset>
 	<legend>Customer Information</legend>
 	<label for="fName">First Name:</label>
@@ -89,13 +105,11 @@ vaule="Nutrition">Nutrition</label>
 		<option vaule="social">Social Media</option>
 		<option vaule="other">Other</option>
 	</select>
-
 	<label for="questions">Questions?</label>
 	<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
 
-
-	<input type="submit" id="submit" vaule="Submit" class="btn">
-
+	<label for="promo">Promo Code:</label>
+	<input type="text" id="promo" name"promo">
 </fieldset>
 
 </form>
@@ -105,6 +119,8 @@ vaule="Nutrition">Nutrition</label>
 	<p>&copy; Copyright 2021. All Rights Reserved.</p>
 	<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
 	</footer>
+
+	<script src="script/script.js"></script>
 
 </div>
 

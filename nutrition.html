@@ -11,12 +11,31 @@
 <link rel="icon" type="image/png" sizes="32x32" href="images.favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apples-touch-icon.png">
 <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
  </head>
  <body>
 
+<div id="container">
+
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+	<div id="menu-links"> 
+	<a href="index.html">Home</a>
+	<a href="about.html">About US</a>
+	<a href="classes.html">Classes</a>
+	<a href="nutrition.html">Nutrition</a>
+	<a href="contact.html">Contact Us </a>
+</div>
+	<a class="menu-icon" onclick ="hamburger()">
+	<div&#9776;</div>
+	</a>
+	</nav>
+
 	<!--Use the header area for the website name or logo-->
-	<header>
+	<header id="ffc-logo">
+
 		<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
+
 	</header>
 	<!--Use the nav area to add hyperlikns to other pages within the website-->
 	<nav>
@@ -85,8 +104,12 @@
 </aside>
 
 </main>
+
 <!--Use the footer area to add webpage footer content-->
 	<footer>
 	<p>&copy; Copyright 2021. All Rights Reserved.</p>
 	<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
 	</footer>
+
+	<script src="script/script.js"></script>
+
